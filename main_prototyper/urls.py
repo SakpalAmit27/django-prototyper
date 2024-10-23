@@ -17,6 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+# importing our static from conf #
+from django.conf.urls.static import static
+
+#importing our settings from conf #
+from django.conf import settings
+
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
