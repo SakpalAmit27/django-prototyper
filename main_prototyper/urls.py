@@ -25,4 +25,6 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-]
+    
+    #this will help us to handle media files and documents #
+] + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
